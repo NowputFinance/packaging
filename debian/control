@@ -1,7 +1,7 @@
-Source: peercoin
+Source: nowp
 Section: utils
 Priority: optional
-Maintainer: Peerchemist <peerchemist@protonmail.ch>
+Maintainer: 0xCircuitBreaker <0xcircuitbreaker@protonmail.ch>
 Build-Depends:
  bash-completion,
  debhelper-compat (= 10),
@@ -29,39 +29,39 @@ Build-Depends:
  qtbase5-dev,
  qttools5-dev-tools,
 Standards-Version: 3.9.2
-Homepage: https://www.peercoin.net/
-Vcs-Git: git://github.com/peercoin/peercoin.git
-Vcs-Browser: https://github.com/peercoin/peercoin
+Homepage: https://www.nowput.org/
+Vcs-Git: git://github.com/NowputFinance/nowp.git
+Vcs-Browser: https://github.com/NowputFinance/nowp
 Rules-Requires-Root: no
 
-Package: peercoind
+Package: nowpd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
+ Nowp is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
  preferable properties.
  .
- This package provides the daemon, peercoind, and the CLI tool
- peercoin-cli to interact with the daemon.
+ This package provides the daemon, nowpd, and the CLI tool
+ nowp-cli to interact with the daemon.
 
-Package: peercoin-qt
+Package: nowp-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
+ Nowp is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
  preferable properties.
  .
- This package provides Peercoin-Qt, a GUI client for Peercoin based on Qt.
+ This package provides Nowp-Qt, a GUI client for Nowp based on Qt.
 
-Package: peercoin-tx
+Package: nowp-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Peer-to-peer digital currency - standalone transaction tool
- Peercoin is a crypto-currency project forked from Bitcoin with aim to achieve
+ Nowp is a crypto-currency project forked from Bitcoin with aim to achieve
  energy-efficiency and keep as much as possible the original Bitcoin's
  preferable properties.
- This package provides peercoin-tx, a command-line transaction creation
+ This package provides nowp-tx, a command-line transaction creation
  tool which can be used without a peercoin daemon.  Some means of
  exchanging minimal transaction data with peers is still required.

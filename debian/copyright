@@ -1,12 +1,13 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: Peercoin
-Upstream-Contact: Stichting Peercoin Foundation <foundation@peercoin.net>
-Source: https://github.com/peercoin/peercoin
+Upstream-Name: Nowp
+Upstream-Contact: Nowput Finance <foundation@nowput.org>
+Source: https://github.com/NowputFinance/nowp
 
 Files: *
 Copyright: 2012-2021, Peercoin Developers
+Copyright: 2023, Nowp Developers
 License: Expat
-Comment: The Peercoin Developers encompasses the current developers listed on https://github.com/peercoin/peercoin,
+Comment: The Nowp Developers encompasses the current developers listed on https://github.com/NowputFinance/nowp,
          as well as the numerous contributors to the project.
 
 Files: debian/*
@@ -48,9 +49,9 @@ Files: src/qt/res/icons/add.png
        src/qt/res/icons/transaction*.png
        src/qt/res/icons/tx_output.png
        src/qt/res/icons/warning.png
-Copyright: Stichting Peercoin Foundation
+Copyright: Nowput Finance
 License: Creative Commons Attribution No Derivatives license 
-Comment: Site: https://github.com/peercoin/media
+Comment: Site: https://github.com/NowputFinance/media
 
 Files: src/qt/res/icons/tx_mined.png
        src/qt/res/src/mine.svg
@@ -69,9 +70,9 @@ Files: src/qt/res/images/about.png
        share/images/splash.png
        share/images/splash-testnet.png
        share/images/transparent-background.png
-Copyright: Stichting Peercoin Foundation
+Copyright: Nowput Finance
 License: Creative Commons Attribution No Derivatives license 
-Comment: Site: https://github.com/peercoin/media
+Comment: Site: https://github.com/NowputFinance/media
 
 
 License: Expat

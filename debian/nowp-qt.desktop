@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Nowp
+Comment=Desktop wallet for Nowp Cryptocurrency
+Comment[de]=Offizieller Client für die Kryptowährung Nowp
+Exec=nowp-qt %u
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/nowp128.png
+MimeType=x-scheme-handler/nowp;
+Categories=Application;Network;
+StartupWMClass=Nowp-qt

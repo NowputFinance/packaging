@@ -1,8 +1,8 @@
-pkgbase = peercoin
+pkgbase = nowp
 	pkgdesc = A peer-to-peer network-based digital currency
 	pkgver = 0.11.8
 	pkgrel = 2
-	url = https://www.peercoin.net/
+	url = https://www.nowput.org/
 	arch = x86_64
 	license = MIT
 	makedepends = boost
@@ -15,24 +15,24 @@ pkgbase = peercoin
 	depends = qrencode
 	depends = qt5-base
 	depends = zeromq
-	source = peercoin-0.11.8.tar.gz::https://github.com/peercoin/peercoin/archive/refs/tags/v0.11.8ppc.tar.gz
+	source = nowp-0.11.8.tar.gz::https://github.com/peercoin/peercoin/archive/refs/tags/v0.11.8ppc.tar.gz
 	b2sums = 3d0a387e96cd11c3cd946fd9e5b3a3353f553f152c5d585baf8338c0de628f52a3b94d0805f0c9ab2f222680fca10342461d43804d7de086868e7cd9f9f79c31
 
-pkgname = peercoin-cli
+pkgname = nowp-cli
 	pkgdesc = A peer-to-peer network-based digital currency - RPC client
 	depends = boost-libs
 	depends = libevent
 
-pkgname = peercoin-daemon
+pkgname = nowp-daemon
 	pkgdesc = A peer-to-peer network-based digital currency - daemon
 	depends = boost-libs
 	depends = db
 	depends = libevent
 	depends = miniupnpc
 	depends = zeromq
-	backup = etc/peercoin/peercoin.conf
+	backup = etc/peercoin/nowp.conf
 
-pkgname = peercoin-qt
+pkgname = nowp-qt
 	pkgdesc = A peer-to-peer network-based digital currency - Qt
 	depends = boost-libs
 	depends = db
@@ -43,6 +43,6 @@ pkgname = peercoin-qt
 	depends = qt5-base
 	depends = zeromq
 
-pkgname = peercoin-tx
+pkgname = nowp-tx
 	pkgdesc = A peer-to-peer network-based digital currency - transaction tool
 	depends = boost-libs
