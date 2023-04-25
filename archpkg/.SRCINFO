@@ -1,6 +1,6 @@
 pkgbase = nowp
 	pkgdesc = A peer-to-peer network-based digital currency
-	pkgver = 0.11.8
+	pkgver = 0.12.3
 	pkgrel = 2
 	url = https://www.nowput.org/
 	arch = x86_64
@@ -15,7 +15,7 @@ pkgbase = nowp
 	depends = qrencode
 	depends = qt5-base
 	depends = zeromq
-	source = nowp-0.11.8.tar.gz::https://github.com/peercoin/peercoin/archive/refs/tags/v0.11.8nowp.tar.gz
+	source = nowp-0.12.3.tar.gz::https://github.com/NowputFinance/nowp/archive/refs/tags/v0.12.3nowp.tar.gz
 	b2sums = 3d0a387e96cd11c3cd946fd9e5b3a3353f553f152c5d585baf8338c0de628f52a3b94d0805f0c9ab2f222680fca10342461d43804d7de086868e7cd9f9f79c31
 
 pkgname = nowp-cli
@@ -30,7 +30,7 @@ pkgname = nowp-daemon
 	depends = libevent
 	depends = miniupnpc
 	depends = zeromq
-	backup = etc/nowput.finance/nowp.conf
+	backup = etc/nowp/nowp.conf
 
 pkgname = nowp-qt
 	pkgdesc = A peer-to-peer network-based digital currency - Qt

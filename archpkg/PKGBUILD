@@ -3,7 +3,7 @@
 
 pkgname=('nowp-cli' 'nowp-daemon' 'nowp-qt' 'nowp-tx')
 pkgbase='nowp'
-pkgver=0.11.8
+pkgver=0.12.3
 pkgrel=2
 pkgdesc="A peer-to-peer network-based digital currency"
 arch=('x86_64')
