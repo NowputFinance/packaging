@@ -1,7 +1,7 @@
 Source: nowp
 Section: utils
 Priority: optional
-Maintainer: 0xCircuitBreaker <0xcircuitbreaker@protonmail.ch>
+Maintainer: 0xcircuitbreaker <0xcircuitbreaker@protonmail.ch>
 Build-Depends:
  bash-completion,
  debhelper-compat (= 10),
