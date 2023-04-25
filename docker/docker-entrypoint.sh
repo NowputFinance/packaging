@@ -8,22 +8,22 @@ fi
 
 if [ "$(echo "$1" | cut -c1)" = "-" ] || [ "$1" = "nowpd" ]; then
 
-  mkdir -p "$PPC_DATA"
-  chmod 700 "$PPC_DATA"
-  chown -R nowp "$PPC_DATA"
+  mkdir -p "$NOWP_DATA"
+  chmod 700 "$NOWP_DATA"
+  chown -R nowp "$NOWP_DATA"
 
-	if [[ ! -s "$PPC_DATA/nowp.conf" ]]; then
-    cat <<-EOF > "$PPC_DATA/nowp.conf"
+	if [[ ! -s "$NOWP_DATA/nowp.conf" ]]; then
+    cat <<-EOF > "$NOWP_DATA/nowp.conf"
     test.rpcbind=0.0.0.0
     main.rpcbind=0.0.0.0
     rpcallowip=::/0
     rpcpassword=${RPC_PASSWORD}
     rpcuser=${RPC_USER}
 		EOF
-    chown nowp "$PPC_DATA/nowp.conf"
+    chown nowp "$NOWP_DATA/nowp.conf"
 	fi
 
-  set -- "$@" -datadir="$PPC_DATA"
+  set -- "$@" -datadir="$NOWP_DATA"
 fi
 
 if [ "$1" = "nowpd" ] || [ "$1" = "nowp-cli" ] || [ "$1" = "nowp-tx" ] || [ "$1" = "nowp-wallet" ] || [ "$1" = "nowp-util" ]; then

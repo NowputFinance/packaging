@@ -11,7 +11,7 @@ url="https://www.nowput.org/"
 license=('MIT')
 depends=('boost-libs' 'db' 'libevent' 'miniupnpc' 'openssl' 'qrencode' 'qt5-base' 'zeromq')
 makedepends=('boost' 'qt5-tools')
-source=("$pkgbase-$pkgver.tar.gz::https://github.com/NowputFinance/nowp/archive/refs/tags/v${pkgver}ppc.tar.gz")
+source=("$pkgbase-$pkgver.tar.gz::https://github.com/NowputFinance/nowp/archive/refs/tags/v${pkgver}nowp.tar.gz")
 b2sums=('3d0a387e96cd11c3cd946fd9e5b3a3353f553f152c5d585baf8338c0de628f52a3b94d0805f0c9ab2f222680fca10342461d43804d7de086868e7cd9f9f79c31')
 
 build() {
@@ -22,7 +22,7 @@ build() {
 }
 
 check() {
-    cd "$pkgbase-${pkgver}ppc"
+    cd "$pkgbase-${pkgver}nowp"
     make --keep-going check
 }
 
@@ -30,7 +30,7 @@ package_nowp-cli() {
     pkgdesc="A peer-to-peer network-based digital currency - RPC client"
     depends=('boost-libs' 'libevent')
 
-    cd "$pkgbase-${pkgver}ppc"
+    cd "$pkgbase-${pkgver}nowp"
     install -D --mode 644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
 
     install -D --mode 644 \
@@ -50,7 +50,7 @@ package_nowp-daemon() {
     optdepeneds=('tor')
     backup=('etc/nowp/nowp.conf')
 
-    cd "$pkgbase-${pkgver}ppc"
+    cd "$pkgbase-${pkgver}nowp"
     install -D --mode 644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
 
     install -D --mode 644 \
@@ -80,7 +80,7 @@ package_nowp-qt() {
     pkgdesc="A peer-to-peer network-based digital currency - Qt"
     depends=('boost-libs' 'db' 'libevent' 'miniupnpc' 'openssl' 'qrencode' 'qt5-base' 'zeromq')
 
-    cd "$pkgbase-${pkgver}ppc"
+    cd "$pkgbase-${pkgver}nowp"
     install -D --mode 644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
 
     install -D --mode 644 \
@@ -101,7 +101,7 @@ package_nowp-tx() {
     pkgdesc="A peer-to-peer network-based digital currency - transaction tool"
     depends=('boost-libs')
 
-    cd "$pkgbase-${pkgver}ppc"
+    cd "$pkgbase-${pkgver}nowp"
     install -D --mode 644 COPYING "$pkgdir/usr/share/licenses/$pkgname/COPYING"
 
     install -D --mode 644 \

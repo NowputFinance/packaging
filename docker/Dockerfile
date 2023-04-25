@@ -16,18 +16,18 @@ RUN apt-get update && apt-get install -y \
     gosu \
  && rm -rf /var/lib/apt/lists/*
 
-ENV PPC_DATA=/data
-ENV PEERCOIN_PREFIX=/opt/nowp
-ENV PATH=${PEERCOIN_PREFIX}/bin:$PATH
+ENV NOWP_DATA=/data
+ENV NOWP_PREFIX=/opt/nowp
+ENV PATH=${NOWP_PREFIX}/bin:$PATH
 ENV RPC_PASSWORD=nowppass
 ENV RPC_USER=nowpuser
 
 COPY --from=build /opt /opt
 COPY docker-entrypoint.sh /entrypoint.sh
 
-VOLUME ["${PPC_DATA}"]
+VOLUME ["${NOWP_DATA}"]
 
-EXPOSE 9901 9902 9903 9904
+EXPOSE 6888 6887 7888 7887
 
 ENTRYPOINT ["/entrypoint.sh"]
 
