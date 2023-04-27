@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package peercoin/peercoin-qt
-for Debian-based Linux systems. If you compile peercoin/peercoin-qt yourself, there are some useful files here.
+This directory contains files used to package nowp/nowp-qt
+for Debian-based Linux systems. If you compile nowp/nowp-qt yourself, there are some useful files here.
 
-## peercoin: URI support ##
+## nowp: URI support ##
 
 
-peercoin-qt.desktop  (Gnome / Open Desktop)
+nowp-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install peercoin-qt.desktop
+	sudo desktop-file-install nowp-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your peercoin-qt binary to `/usr/bin`
-and the `../../share/pixmaps/peercoin128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your nowp-qt binary to `/usr/bin`
+and the `../../share/pixmaps/nowp128.png` to `/usr/share/pixmaps`
 
-peercoin-qt.protocol (KDE)
+nowp-qt.protocol (KDE)
 

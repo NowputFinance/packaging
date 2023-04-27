@@ -1,6 +1,6 @@
 [Protocol]
-exec=peercoin-qt '%u'
-protocol=peercoin
+exec=nowp-qt '%u'
+protocol=nowp
 input=none
 output=none
 helper=true

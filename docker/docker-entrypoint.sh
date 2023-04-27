@@ -2,33 +2,33 @@
 set -e
 
 if [ "$(echo "$1" | cut -c1)" = "-" ]; then
-  echo "$0: assuming arguments for peercoind"
-  set -- peercoind "$@"
+  echo "$0: assuming arguments for nowpd"
+  set -- nowpd "$@"
 fi
 
-if [ "$(echo "$1" | cut -c1)" = "-" ] || [ "$1" = "peercoind" ]; then
+if [ "$(echo "$1" | cut -c1)" = "-" ] || [ "$1" = "nowpd" ]; then
 
-  mkdir -p "$PPC_DATA"
-  chmod 700 "$PPC_DATA"
-  chown -R peercoin "$PPC_DATA"
+  mkdir -p "$NOWP_DATA"
+  chmod 700 "$NOWP_DATA"
+  chown -R nowp "$NOWP_DATA"
 
-	if [[ ! -s "$PPC_DATA/peercoin.conf" ]]; then
-    cat <<-EOF > "$PPC_DATA/peercoin.conf"
+	if [[ ! -s "$NOWP_DATA/nowp.conf" ]]; then
+    cat <<-EOF > "$NOWP_DATA/nowp.conf"
     test.rpcbind=0.0.0.0
     main.rpcbind=0.0.0.0
     rpcallowip=::/0
     rpcpassword=${RPC_PASSWORD}
     rpcuser=${RPC_USER}
 		EOF
-    chown peercoin "$PPC_DATA/peercoin.conf"
+    chown nowp "$NOWP_DATA/nowp.conf"
 	fi
 
-  set -- "$@" -datadir="$PPC_DATA"
+  set -- "$@" -datadir="$NOWP_DATA"
 fi
 
-if [ "$1" = "peercoind" ] || [ "$1" = "peercoin-cli" ] || [ "$1" = "peercoin-tx" ] || [ "$1" = "peercoin-wallet" ] || [ "$1" = "peercoin-util" ]; then
+if [ "$1" = "nowpd" ] || [ "$1" = "nowp-cli" ] || [ "$1" = "nowp-tx" ] || [ "$1" = "nowp-wallet" ] || [ "$1" = "nowp-util" ]; then
   echo
-  exec gosu peercoin "$@"
+  exec gosu nowp "$@"
 fi
 
 exec "$@"

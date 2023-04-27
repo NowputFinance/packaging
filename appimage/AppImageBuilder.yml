@@ -2,11 +2,11 @@ version: 1
 AppDir:
   path: AppDir
   app_info:
-    id: peercoin-qt
-    name: Peercoin-Qt
-    icon: peercoin
+    id: nowp-qt
+    name: Nowp-Qt
+    icon: nowp
     version: !ENV ${VERSION}
-    exec: bin/peercoin-qt
+    exec: bin/nowp-qt
     exec_args: $@
   runtime:
     env:
