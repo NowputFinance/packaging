@@ -3,7 +3,7 @@
 
 pkgname=('nowp-cli' 'nowp-daemon' 'nowp-qt' 'nowp-tx')
 pkgbase='nowp'
-pkgver=0.12.3
+pkgver=0.12.3.2
 pkgrel=2
 pkgdesc="A peer-to-peer network-based digital currency"
 arch=('x86_64')
@@ -11,8 +11,8 @@ url="https://www.nowput.org/"
 license=('MIT')
 depends=('boost-libs' 'db' 'libevent' 'miniupnpc' 'openssl' 'qrencode' 'qt5-base' 'zeromq')
 makedepends=('boost' 'qt5-tools')
-source=("$pkgbase-$pkgver.tar.gz::https://github.com/NowputFinance/nowp/archive/refs/tags/v${pkgver}nowp.tar.gz")
-b2sums=('3d0a387e96cd11c3cd946fd9e5b3a3353f553f152c5d585baf8338c0de628f52a3b94d0805f0c9ab2f222680fca10342461d43804d7de086868e7cd9f9f79c31')
+source=("$pkgbase-$pkgver.tar.gz::https://github.com/0xcircuitbreaker/nowp/archive/refs/tags/v${pkgver}nowp.tar.gz")
+b2sums=('208c6357766afb9991cfc09d43076b3c475dce4d3a62355e7321e693b9a585755d730b535f0c4ef049422c868fe4302372f719bd54e7e5b772d8645a5d2be81a')
 
 build() {
     cd "$pkgbase-${pkgver}nowp"

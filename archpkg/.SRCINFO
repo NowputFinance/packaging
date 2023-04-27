@@ -1,6 +1,6 @@
 pkgbase = nowp
 	pkgdesc = A peer-to-peer network-based digital currency
-	pkgver = 0.12.3
+	pkgver = 0.12.3.2
 	pkgrel = 2
 	url = https://www.nowput.org/
 	arch = x86_64
@@ -15,8 +15,8 @@ pkgbase = nowp
 	depends = qrencode
 	depends = qt5-base
 	depends = zeromq
-	source = nowp-0.12.3.tar.gz::https://github.com/NowputFinance/nowp/archive/refs/tags/v0.12.3nowp.tar.gz
-	b2sums = 3d0a387e96cd11c3cd946fd9e5b3a3353f553f152c5d585baf8338c0de628f52a3b94d0805f0c9ab2f222680fca10342461d43804d7de086868e7cd9f9f79c31
+	source = nowp-0.12.3.2.tar.gz::https://github.com/0xcircuitbreaker/nowp/archive/refs/tags/v0.12.3.2nowp.tar.gz
+	b2sums = 208c6357766afb9991cfc09d43076b3c475dce4d3a62355e7321e693b9a585755d730b535f0c4ef049422c868fe4302372f719bd54e7e5b772d8645a5d2be81a
 
 pkgname = nowp-cli
 	pkgdesc = A peer-to-peer network-based digital currency - RPC client
